@@ -1,13 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
-import statsRouter from './routes/stats.ts';
-import invoiceTrendsRouter from './routes/invoiceTrends.ts';
-import vendorsTopRouter from './routes/vendorsTop.ts';
-import categorySpendRouter from './routes/categorySpend.ts';
-import cashOutflowRouter from './routes/cashOutflow.ts';
-import invoicesRouter from './routes/invoices.ts';
-import chatWithData from './routes/chatWithData.ts';
+import statsRouter from './routes/stats.js';
+import invoiceTrendsRouter from './routes/invoiceTrends.js';
+import vendorsTopRouter from './routes/vendorsTop.js';
+import categorySpendRouter from './routes/categorySpend.js';
+import cashOutflowRouter from './routes/cashOutflow.js';
+import invoicesRouter from './routes/invoices.js';
+import chatWithData from './routes/chatWithData.js';
 
 const app = express();
 const prisma = new PrismaClient();

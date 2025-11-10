@@ -5,7 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "ts-node-dev src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "postinstall": "prisma generate",
     "seed": "ts-node ./scripts/seed.ts"
   },
   "keywords": [],
@@ -21,6 +25,7 @@
     "prisma": "^6.19.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/node": "^24.10.0",
     "nodemon": "^3.1.10",

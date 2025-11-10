@@ -5,5 +5,10 @@
   "workspaces": [
     "apps/*",
     "services/*"
-  ]
+  ],
+  "scripts": {
+    "build": "turbo run build --filter=api",
+    "dev": "turbo run dev --parallel",
+    "prisma:generate": "prisma generate"
+  }
 }

@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
       body: JSON.stringify({ question }),
     });
 
-    const data = await r.json();
+    const data: any = await r.json();
     if (!r.ok) {
       return res.status(r.status).json({ ok: false, error: data.detail || "Vanna error" });
     }
