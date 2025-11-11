@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 
 const router = Router();
 
-const VANNA_BASE = process.env.VANNA_API_BASE_URL || "http://localhost:8000";
+const VANNA_BASE = process.env.VANNA_URL || "http://localhost:8000";
 
 router.post("/", async (req, res) => {
   try {
