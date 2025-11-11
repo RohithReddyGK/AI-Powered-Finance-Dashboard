@@ -47,7 +47,7 @@ export default function ChatMessage({ message }: any) {
               <tbody>
                 {rows.map((r: any, i: number) => (
                   <tr key={i} className="border-t">
-                    {columns.map((c) => (
+                    {columns.map((c: string) => (
                       <td key={c} className="px-2 py-1">{r[c]}</td>
                     ))}
                   </tr>
