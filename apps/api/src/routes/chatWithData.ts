@@ -30,6 +30,7 @@ router.post("/", async (req, res) => {
 
     return res.json(data);
   } catch (e: any) {
+    console.error("CHAT-WITH-DATA ERROR:", e);
     return res.status(500).json({ ok: false, error: e.message });
   }
 });
