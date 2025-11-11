@@ -1,6 +1,6 @@
-# AI-Powered Finance Dashboard  
-
-A modern analytics platform that transforms raw finance data into interactive visual insights - dashboard and allows natural-language querying using an AI-based SQL generation engine.
+<div align="center">
+  <h1 style="font-size:10em;">AI-Powered Finance Dashboard</h1>
+</div>
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://ai-powered-finance-dashboard.vercel.app/)
 
@@ -20,6 +20,8 @@ A modern analytics platform that transforms raw finance data into interactive vi
 
 ![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 ![Fly.io Backend](https://img.shields.io/badge/LLM%20Service-Fly.io-blue?logo=flydotio)
+
+A modern analytics platform that transforms raw finance data into interactive visual insights - dashboard and allows natural-language querying using an AI-based SQL generation engine.
 
 ---
 
