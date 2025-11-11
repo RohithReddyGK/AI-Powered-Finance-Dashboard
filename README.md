@@ -17,6 +17,7 @@
 
 ![FastAPI](https://img.shields.io/badge/AI%20Service-FastAPI-009688?logo=fastapi)
 ![Vanna AI](https://img.shields.io/badge/NL→SQL-Vanna_AI-5B21B6)
+![Groq LLM](https://img.shields.io/badge/LLM-Groq_FAISS-orange?logo=groq)
 
 ![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 ![Fly.io Backend](https://img.shields.io/badge/LLM%20Service-Fly.io-blue?logo=flydotio)
