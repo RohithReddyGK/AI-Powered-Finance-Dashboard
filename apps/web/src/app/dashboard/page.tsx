@@ -24,7 +24,7 @@ export default function DashboardPage() {
     Promise.all([
       fetch(`${process.env.NEXT_PUBLIC_API_BASE}/stats`).then((r) => r.json()),
       fetch(`${process.env.NEXT_PUBLIC_API_BASE}/invoice-trends`).then((r) => r.json()),
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/top10`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/vendors/top10`).then((r) => r.json()),
       fetch(`${process.env.NEXT_PUBLIC_API_BASE}/category-spend`).then((r) => r.json()),
       fetch(`${process.env.NEXT_PUBLIC_API_BASE}/cash-outflow`).then((r) => r.json()),
     ]).then(([statsData, trendsData, vendorsData, categoryData, cashData]) => {
