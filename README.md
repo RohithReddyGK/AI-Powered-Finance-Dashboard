@@ -102,15 +102,17 @@ cd AI-Powered-Finance-Dashboard
 ```bash
 cd apps/api
 npm install
-
+```
 # Generate Prisma Client
+```bash
 npm run prisma:generate
-
+```
 # Start local dev server
+```bash
 npm run dev
 ```
-The API will start at:
 ```bash
+The API will start at:
 http://localhost:4000
 ```
 
@@ -118,30 +120,34 @@ http://localhost:4000
 ```bash
 cd apps/web
 npm install
-
+```
 # Start dev server
+```bash
 npm run dev
 ```
-The web UI will open at:
 ```bash
+The web UI will open at:
 http://localhost:3000
 ```
 
 ### 3) Start the AI Query Service (Vanna on FastAPI + Groq)
 ```bash
 cd services/vanna
-
+```
 # Activate your Python virtual environment
+```bash
 analytics/Scripts/activate
-
+```
 # Install Python dependencies
+```bash
 pip install -r requirements.txt
-
+```
 # Run the LLM SQL Engine
+```bash
 uvicorn app:app --reload
+```
 ```bash
 The AI /ask endpoint runs at:
-```bash
 http://localhost:8000/ask
 ```
 
