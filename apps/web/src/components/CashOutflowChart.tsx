@@ -10,7 +10,7 @@ export default function CashOutflowChart({ data: propData, subtitle }: Props) {
 
   useEffect(() => {
     if (propData) return;
-    fetch("http://localhost:4000/cash-outflow")
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/cash-outflow`)
       .then((res) => res.json())
       .then(setData);
   }, [propData]);

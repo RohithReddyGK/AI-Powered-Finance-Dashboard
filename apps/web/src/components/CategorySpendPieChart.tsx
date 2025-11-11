@@ -12,7 +12,7 @@ export default function CategorySpendPieChart({ data: propData, subtitle }: Prop
 
   useEffect(() => {
     if (propData) return;
-    fetch("http://localhost:4000/category-spend")
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/category-spend`)
       .then((res) => res.json())
       .then(setData);
   }, [propData]);

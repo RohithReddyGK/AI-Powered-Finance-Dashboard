@@ -18,7 +18,7 @@ export default function TopVendorsChart({ data: propData, subtitle }: Props) {
 
   useEffect(() => {
     if (propData) return;
-    fetch("http://localhost:4000/vendors/top10")
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/vendors/top10`)
       .then((r) => r.json())
       .then(setData);
   }, [propData]);

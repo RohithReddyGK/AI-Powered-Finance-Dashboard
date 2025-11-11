@@ -22,11 +22,11 @@ export default function DashboardPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch("http://localhost:4000/stats").then((r) => r.json()),
-      fetch("http://localhost:4000/invoice-trends").then((r) => r.json()),
-      fetch("http://localhost:4000/vendors/top10").then((r) => r.json()),
-      fetch("http://localhost:4000/category-spend").then((r) => r.json()),
-      fetch("http://localhost:4000/cash-outflow").then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/stats`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/invoice-trends`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/top10`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/category-spend`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/cash-outflow`).then((r) => r.json()),
     ]).then(([statsData, trendsData, vendorsData, categoryData, cashData]) => {
       setStats(statsData);
       setInvoiceTrends(trendsData);
@@ -38,7 +38,7 @@ export default function DashboardPage() {
 
   // Fetch Invoices automatically, when page changes.
   useEffect(() => {
-    fetch(`http://localhost:4000/invoices?page=${invoicePage}&limit=10`)
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/invoices?page=${invoicePage}&limit=10`)
       .then((r) => r.json())
       .then((res) => {
         setInvoices(res.data);
