@@ -103,11 +103,11 @@ cd AI-Powered-Finance-Dashboard
 cd apps/api
 npm install
 ```
-# Generate Prisma Client
+#### Generate Prisma Client
 ```bash
 npm run prisma:generate
 ```
-# Start local dev server
+#### Start local dev server
 ```bash
 npm run dev
 ```
@@ -121,7 +121,7 @@ http://localhost:4000
 cd apps/web
 npm install
 ```
-# Start dev server
+#### Start dev server
 ```bash
 npm run dev
 ```
@@ -134,15 +134,15 @@ http://localhost:3000
 ```bash
 cd services/vanna
 ```
-# Activate your Python virtual environment
+#### Activate your Python virtual environment
 ```bash
 analytics/Scripts/activate
 ```
-# Install Python dependencies
+#### Install Python dependencies
 ```bash
 pip install -r requirements.txt
 ```
-# Run the LLM SQL Engine
+#### Run the LLM SQL Engine
 ```bash
 uvicorn app:app --reload
 ```
