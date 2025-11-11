@@ -2,6 +2,8 @@
 
 A modern analytics platform that transforms raw finance data into interactive visual insights - dashboard and allows natural-language querying using an AI-based SQL generation engine.
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://ai-powered-finance-dashboard.vercel.app/)
+
 ![Next.js](https://img.shields.io/badge/Frontend-Next.js-white?logo=nextdotjs)
 ![TailwindCSS](https://img.shields.io/badge/UI-TailwindCSS-38BDF8?logo=tailwindcss)
 ![shadcn/ui](https://img.shields.io/badge/Components-shadcn/ui-black?logo=radixui)
@@ -97,7 +99,10 @@ git clone https://github.com/RohithReddyGK/AI-Powered-Finance-Dashboard.git
 cd AI-Powered-Finance-Dashboard
 ```
 
+---
+
 ## ▶️ Running Locally
+
 ### 1) Start Backend API (Express + Prisma)
 ```bash
 cd apps/api
@@ -151,7 +156,9 @@ The AI /ask endpoint runs at:
 http://localhost:8000/ask
 ```
 
-### ✅ Make sure .env files are configured
+---
+
+### Make sure .env files are configured
 
 #### apps/api/.env
 ```bash
@@ -174,6 +181,8 @@ PORT=8000
 
 Next.js UI → Express API → FastAPI LLM Engine → PostgreSQL (Neon)
 
+---
+
 ## 🌐 Deployment
 
 | Component  | Platform | Deployment Link |
@@ -182,7 +191,14 @@ Next.js UI → Express API → FastAPI LLM Engine → PostgreSQL (Neon)
 | Backend(API)| Vercel   | [BackEnd Service](https://ai-powered-finance-dashboard-api.vercel.app/)|
 | AI Service | Fly.io   | [Vanna AI](https://vanna-analytics-ai.fly.dev/)|
 
+---
 
+## 🙋‍♂️ Author
 
+**Rohith Reddy.G.K**  
+🔗 [GitHub Profile](https://github.com/RohithReddyGK)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/rohithreddygk)
 
+---
 
+### 🌟 **If you like this Product Engineered Work, give it a ⭐ **
