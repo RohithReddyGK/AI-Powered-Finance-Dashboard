@@ -187,7 +187,7 @@ Next.js UI → Express API → FastAPI LLM Engine → PostgreSQL (Neon)
 
 ## 🌐 Deployment
 
-| Component  | Platform | Deployment Link |
+| Component  | Platform | Deployment Links |
 | ---------- | -------- | ------------------ |
 | Web        | Vercel   |  [FrontEnd Web](https://ai-powered-finance-dashboard.vercel.app/)|
 | Backend(API)| Vercel   | [BackEnd Service](https://ai-powered-finance-dashboard-api.vercel.app/)|
